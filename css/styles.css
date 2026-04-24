@@ -22,6 +22,44 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--bg-color);
   color: var(--text-primary);
+  overflow-x: hidden;
+}
+
+#burbuja-container {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none; /* para que no interfiera con los clics */
+    z-index: 999; /* siempre al frente */
+}
+
+.burbuja {
+    position: absolute;
+    bottom: -200px; /* empieza justo debajo de la pantalla */
+    left: 0;
+    border-radius: 50%;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 999;
+    background-color: rgba(64, 224, 208, 0.342); /* color cyan con transparencia */
+}
+
+@keyframes moverArriba {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1; /* aparece al subir */
+    }
+    
+    100% {
+        transform: translateY(-100vh) scale(1.5); /* sube y crece */
+        opacity: 0; /* se desvanece al subir */
+    }
 }
 
 h2{
