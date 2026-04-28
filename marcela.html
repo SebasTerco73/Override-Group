@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - Marcela Herrera</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles-marcela.css">
+</head>
+<body id="pagina-marcela">
+
+    <div class="card">
+        <div class="content">
+            <img src="img/marcela-perfil.jpeg" alt="Marcela Herrera" class="avatar">
+            
+            <h2>Marcela</h2>
+            <h3 class="subtitle-bio">
+    <i class="fa-solid fa-dna icon-bio"></i> 
+     Estudiante de Biotecnología
+</h3>
+            
+
+            <button id="toggleInfo">Más sobre mí</button>
+
+            <div id="infoSection" class="info-section">
+                
+                <div class="info-tabs">
+                    <button class="tab-btn active" data-tab="habilidades">Habilidades</button>
+                    <button class="tab-btn" data-tab="peliculas">Películas</button>
+                    <button class="tab-btn" data-tab="musica">Música</button>
+                </div>
+
+                <div id="habilidades" class="tab-content active">
+                    <ul class="info-list">
+                        <li><i class="fa-solid fa-flask"></i> Química & Biotecnología </li>
+                        <li><i class="fa-solid fa-microscope"></i> Gestión de Laboratorio Digital</li>
+                        <li><i class="fa-solid fa-code"></i> SQL & Análisis de Datos </li>
+                        <li><i class="fa-solid fa-cloud"></i> Cloud Computing para Ciencias</li>
+                    </ul>
+                </div>
+
+                <div id="peliculas" class="tab-content">
+                    <ul class="info-list">
+                        <li><i class="fa-solid fa-film"></i> It, El payaso (1990)</li>
+                        <li><i class="fa-solid fa-film"></i> Terminator 2 (1991)</li>
+                        <li><i class="fa-solid fa-film"></i> El exorcista (1973)</li>
+                    </ul>
+                </div>
+
+                <div id="musica" class="tab-content">
+                    <ul class="info-list">
+                        <li><i class="fa-solid fa-compact-disc"></i> Queen, The Game (1980)</li>
+                        <li><i class="fa-solid fa-compact-disc"></i> AC/DC, Thunderstruck (1991)</li>
+                        <li><i class="fa-solid fa-compact-disc"></i> Michael Jackson, Billie Jean (1982)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <a href="index.html" class="nav-btn" title="Volver al inicio" aria-label="Volver al inicio">
+    <i class="fa-solid fa-house"></i>
+            </a>
+        </div>
+    </div>
+
+    <script src="js/script-marcela.js"></script>
+</body>
+</html>
