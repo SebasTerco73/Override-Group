@@ -1,0 +1,132 @@
+:root {
+  --primary: rgba(255, 70, 86, 0.9); /* Rojo Override */
+  --secondary: rgba(89, 205, 255, 0.9); /* Azul acento */
+  --bio-cian: #00ffcc;
+}
+
+#pagina-marcela * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#pagina-marcela {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: 'Roboto', sans-serif;
+  background: radial-gradient(circle at center, #0a3d3d 0%, #051a1a 40%, #000000 100%);
+  background-attachment: fixed;
+}
+
+#pagina-marcela .card {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 255, 204, 0.3); 
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 255, 204, 0.1);
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#pagina-marcela .avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid var(--primary);
+  margin-top: -60px;
+  margin-bottom: 15px;
+  object-fit: cover;
+  box-shadow: 0 0 15px rgba(255, 70, 86, 0.3);
+}
+
+#pagina-marcela h2 { color: white; margin-bottom: 5px; font-size: 1.8rem; }
+
+#pagina-marcela .subtitle-bio {
+    color: rgba(255, 255, 255, 0.85);
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95em;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#pagina-marcela .icon-bio {
+    color: var(--bio-cian); 
+    margin-right: 10px;
+    font-size: 1.2em;
+    filter: drop-shadow(0 0 5px rgba(0, 255, 204, 0.5));
+}
+
+#pagina-marcela button#toggleInfo {
+  padding: 12px 25px;
+  background: linear-gradient(45deg, var(--primary), var(--secondary));
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+#pagina-marcela .info-section {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+#pagina-marcela .info-section.active { max-height: 600px; }
+
+#pagina-marcela .info-tabs {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#pagina-marcela .tab-btn {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 12px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#pagina-marcela .tab-btn.active { color: white; border-bottom: 2px solid var(--primary); }
+
+#pagina-marcela .tab-content { display: none; padding: 20px 0; text-align: left; color: white; }
+#pagina-marcela .tab-content.active { display: block; animation: fadeIn 0.3s; }
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+#pagina-marcela .info-list { list-style: none; }
+#pagina-marcela .info-list li { padding: 10px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+#pagina-marcela .info-list i { 
+    margin-right: 12px; 
+    color: var(--bio-cian); 
+    width: 20px; 
+    text-align: center; 
+}
+
+#pagina-marcela .nav-btn {
+  display: inline-flex;
+  margin-top: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: white;
+  color: var(--primary);
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+#pagina-marcela .nav-btn:hover { background: var(--primary); color: white; }
