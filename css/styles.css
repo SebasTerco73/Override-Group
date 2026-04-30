@@ -248,6 +248,14 @@ section {
   margin-top: 30px;
 }
 
+#nosotros p{
+  margin-bottom: 10px;
+  line-height: 1.2;
+  color: var(--text-primary);  
+  text-align: center;  
+  font-size: 1.2em;      
+}
+
 .card-miembro {
   background-color: #08101c; 
   padding: 20px;
