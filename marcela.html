@@ -3,65 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil - Marcela Herrera</title>
+    <title>Marcela Herrera - BioTech & Software Portfolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    
     <link rel="stylesheet" href="css/styles-marcela.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body id="pagina-marcela">
 
-    <div class="card">
-        <div class="content">
-            <img src="img/marcela-perfil.jpeg" alt="Marcela Herrera" class="avatar">
+    <header>
+        <a href="../index.html" class="logo-link">
+            <img class="logo" src="img/override.png" alt="Logo Override">
+        </a>
+        <button class="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#peliculas">Películas</a></li>
+                <li><a href="#discos">Discos</a></li>
+                <li><a href="#hobbies">Pasiones</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="../index.html">Override</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="card-container">
             
-            <h2>Marcela</h2>
-            <h3 class="subtitle-bio">
-    <i class="fa-solid fa-dna icon-bio"></i> 
-     Estudiante de Biotecnología
-</h3>
-            
-
-            <button id="toggleInfo">Más sobre mí</button>
-
-            <div id="infoSection" class="info-section">
-                
-                <div class="info-tabs">
-                    <button class="tab-btn active" data-tab="habilidades">Habilidades</button>
-                    <button class="tab-btn" data-tab="peliculas">Películas</button>
-                    <button class="tab-btn" data-tab="musica">Música</button>
+            <section id="sobre-mi" class="section-glass">
+                <div class="contenido-perfil">
+                    <img src="img/marcela-perfil.jpeg" alt="Marcela Herrera" class="avatar">
+                    <h2>Marcela</h2>
+                    <h3 class="role-biotech"><i class="fa-solid fa-dna"></i> Estudiante de Biotecnología</h3>
+                    <p class="bio-text">
+                        Biotecnóloga en formación & Futura Desarrolladora. 🧬💻<br>
+                        Transformando datos en conocimiento y procesos biológicos en código.
+                    </p>
+                    
+                    <div class="scroll-down-indicator">
+                        <a href="#skills"><i class="fa-solid fa-chevron-down"></i></a>
+                    </div>
                 </div>
+            </section>
 
-                <div id="habilidades" class="tab-content active">
-                    <ul class="info-list">
-                        <li><i class="fa-solid fa-flask"></i> Química & Biotecnología </li>
-                        <li><i class="fa-solid fa-microscope"></i> Gestión de Laboratorio Digital</li>
-                        <li><i class="fa-solid fa-code"></i> SQL & Análisis de Datos </li>
-                        <li><i class="fa-solid fa-cloud"></i> Cloud Computing para Ciencias</li>
+            <section id="skills" class="section-glass">
+                <h2>Habilidades</h2>
+                <div class="skills-grid">
+                    <div class="skill-item"><i class="fa-solid fa-flask"></i><p>Biotecnología</p></div>
+                    <div class="skill-item"><i class="fa-solid fa-microscope"></i><p>Laboratorio</p></div>
+                    <div class="skill-item"><i class="devicon-python-plain colored"></i><p>Python</p></div>
+                    <div class="skill-item"><i class="devicon-mysql-plain colored"></i><p>SQL</p></div>
+                    <div class="skill-item"><i class="devicon-amazonwebservices-plain-wordmark colored"></i><p>AWS</p></div>
+                    <div class="skill-item"><i class="devicon-react-original colored"></i><p>React</p></div>
+                    <div class="skill-item"><i class="devicon-rstudio-plain colored"></i><p>R / Stats</p></div>
+                    <div class="skill-item"><i class="fa-solid fa-chart-line"></i><p>Data Analysis</p></div>
+                    <div class="skill-item"><i class="fa-solid fa-dna"></i><p>Bioinfo</p></div>
+                    <div class="skill-item"><i class="devicon-github-original"></i><p>GitHub</p></div>
+                </div>
+            </section>
+
+            <section id="peliculas" class="section-glass">
+                <h2>Películas</h2>
+                <div class="cine-lista">
+                    <i class="fa-solid fa-film" style="font-size: 2rem; color: var(--accent-color); margin-bottom: 15px; display: block; text-align: center;"></i>
+                    <ul style="list-style: none; text-align: center; padding: 0;">
+                        <li style="padding: 8px 0; border-bottom: 1px solid var(--glass-border);">It, El payaso (1990)</li>
+                        <li style="padding: 8px 0; border-bottom: 1px solid var(--glass-border);">Terminator 2 (1991)</li>
+                        <li style="padding: 8px 0;">El exorcista (1973)</li>
                     </ul>
                 </div>
+            </section>
 
-                <div id="peliculas" class="tab-content">
-                    <ul class="info-list">
-                        <li><i class="fa-solid fa-film"></i> It, El payaso (1990)</li>
-                        <li><i class="fa-solid fa-film"></i> Terminator 2 (1991)</li>
-                        <li><i class="fa-solid fa-film"></i> El exorcista (1973)</li>
+            <section id="discos" class="section-glass">
+                <h2>Discos</h2>
+                <div class="musica-lista">
+                    <i class="fa-solid fa-compact-disc" style="font-size: 2rem; color: var(--accent-color); margin-bottom: 15px; display: block; text-align: center;"></i>
+                    <ul style="list-style: none; text-align: center; padding: 0;">
+                        <li style="padding: 8px 0; border-bottom: 1px solid var(--glass-border);">Queen - The Game</li>
+                        <li style="padding: 8px 0; border-bottom: 1px solid var(--glass-border);">AC/DC - Thunderstruck</li>
+                        <li style="padding: 8px 0;">Michael Jackson - Billie Jean</li>
                     </ul>
                 </div>
+            </section>
 
-                <div id="musica" class="tab-content">
-                    <ul class="info-list">
-                        <li><i class="fa-solid fa-compact-disc"></i> Queen, The Game (1980)</li>
-                        <li><i class="fa-solid fa-compact-disc"></i> AC/DC, Thunderstruck (1991)</li>
-                        <li><i class="fa-solid fa-compact-disc"></i> Michael Jackson, Billie Jean (1982)</li>
-                    </ul>
+            <section id="hobbies" class="section-glass">
+                <h2>Pasiones</h2>
+                <div class="hobbies-flex">
+                    <div class="hobby-tag"><i class="fa-solid fa-table-tennis-paddle-ball"></i> Tenis</div>
+                    <div class="hobby-tag"><i class="fa-solid fa-dog"></i> Manchi</div>
+                    <div class="hobby-tag"><i class="fa-solid fa-star" style="color: red;"></i> River Plate</div>
                 </div>
-            </div>
+            </section>
 
-            <a href="index.html" class="nav-btn" title="Volver al inicio" aria-label="Volver al inicio">
-    <i class="fa-solid fa-house"></i>
+            <section id="contacto" class="section-glass">
+                <h2>Contacto</h2>
+                <form id="contact-form">
+                    <input type="text" placeholder="Tu nombre" required>
+                    <input type="email" placeholder="Tu email" required>
+                    <textarea placeholder="Hola Marcela..." rows="4" required></textarea>
+                    <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Marcela Herrera. Todos los derechos reservados.</p>
+        <div class="social-links">
+            <a href="https://github.com/herreramarcela" target="_blank" title="Ver mi código en GitHub">
+                <i class="fa-brands fa-github"></i> Mi GitHub
             </a>
         </div>
-    </div>
+    </footer>
+
+    
+    <button id="btn-scroll-dinamico" class="scroll-btn">
+        <i id="icono-scroll" class="fa-solid fa-arrow-down"></i>
+    </button>
 
     <script src="js/script-marcela.js"></script>
 </body>
