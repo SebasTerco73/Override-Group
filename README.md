@@ -199,7 +199,13 @@ Durante el desarrollo se utilizó IA para apoyar el trabajo:
 - ChatGPT asistió en la resolución de problemas de la card “oficio” del archivo styles-neyel.css, especialmente en la estructura y estilos.
   (Prompt utilizado: según mi código html ("pegando el apartado de oficio del html") indícame cómo crear una card de oficio en estilo Netflix) sirviendo como base para su modificacion personalizada.
 - También se tomaron ideas para accesibilidad y mejoras generales.
-
+  
+  Uso de Inteligencia Artificial para el Avatar
+  
+- Para el diseño del avatar personal  y la ilustración de mi mascota , utilicé Gemini 3 Flash Image. El proceso se basó en un flujo de trabajo iterativo de IA Generativa:
+Modelo: Gemini 3 Flash Image (Nano Banana 2).
+Criterio de Diseño: Transformación de fotografía real a ilustración digital con estilo de animación moderno.
+Refinamiento: Ajustes mediante lenguaje natural para asegurar la fidelidad de rasgos y la limpieza visual.
 ---
 
 ## Créditos
