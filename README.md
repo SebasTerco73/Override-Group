@@ -95,9 +95,15 @@ En `index.html` vas a encontrar:
 
 - **Nosotros**  
   Presentación del grupo Override: origen, evolución y forma de trabajo.
+  
+  <img width="1346" height="478" alt="image" src="https://github.com/user-attachments/assets/71c5c631-be2e-4874-84eb-d5f170e7b05c" />
+
 
 - **Bitácora**  
   Timeline con eventos del proyecto (decisiones, dificultades y soluciones).
+  
+  <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/bf752798-9750-4d7c-9ee0-880e00b918e2" />
+
 
 - **Miembros**  
   Cards con cada integrante y un botón/enlace a su portafolio:
@@ -105,6 +111,9 @@ En `index.html` vas a encontrar:
   - `marcela.html`
   - `neyel.html`
   - `sebas.html`
+    
+ <img width="1339" height="429" alt="image" src="https://github.com/user-attachments/assets/b78eb5d1-4506-47b8-a3f6-eb454fccb148" />
+
 
 ---
 
